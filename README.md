@@ -1,16 +1,19 @@
-# IKEA Customer Analytics | Customer & Revenue Intelligence Dashboard
+<p align="center">
+  <img src="assets/01-dashboard-overview.png" alt="IKEA Customer Analytics dashboard overview" width="100%" />
+</p>
+
+<h1 align="center">IKEA Customer Analytics</h1>
+<h3 align="center">Customer & Revenue Intelligence | Power BI Dashboard</h3>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Project-Customer%20Analytics-0051BA?style=for-the-badge&logo=ikea&logoColor=yellow" />
-  <img src="https://img.shields.io/badge/Power%20BI-Dashboard-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" />
-  <img src="https://img.shields.io/badge/Analytics-RFM%20Analysis-FFD500?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Focus-Customer%20Retention-0051BA?style=for-the-badge" />
+  <b>Understand customers. Discover patterns. Drive better business decisions.</b>
 </p>
 
 <p align="center">
-  <b>Turning customer data into meaningful business intelligence.</b>
-  <br/>
-  Exploring customer behaviour, revenue performance, RFM segmentation, and churn patterns through interactive Power BI dashboards.
+  <img src="https://img.shields.io/badge/Power%20BI-Dashboard-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" alt="Power BI" />
+  <img src="https://img.shields.io/badge/Analytics-Customer%20%26%20Revenue-0051BA?style=for-the-badge" alt="Customer and revenue analytics" />
+  <img src="https://img.shields.io/badge/Method-RFM%20Segmentation-FFD500?style=for-the-badge" alt="RFM segmentation" />
+  <img src="https://img.shields.io/badge/Focus-Retention%20%26%20Churn-0051BA?style=for-the-badge" alt="Retention and churn" />
 </p>
 
 ---
@@ -18,29 +21,25 @@
 ## 📌 Table of Contents
 
 <details open>
-<summary><b>Explore Project Documentation</b></summary>
+<summary><b>Navigate the project</b></summary>
 
+- [Project at a Glance](#-project-at-a-glance)
 - [Project Overview](#-project-overview)
-- [Business Context & Problem Statement](#-business-context--problem-statement)
+- [Business Problem](#-business-problem)
 - [Project Objectives](#-project-objectives)
-- [Dataset Overview](#-dataset-overview)
-- [Understanding RFM Analysis](#-understanding-rfm-analysis)
-- [Dashboard Architecture](#-dashboard-architecture)
-- [Dashboard Walkthrough](#-dashboard-walkthrough)
-  - [Landing Page](#1-ikea-customer-analytics-overview)
-  - [Business Overview – Customer](#2-business-overview--customer-analysis)
-  - [Business Overview – Revenue](#3-business-overview--revenue-analysis)
-  - [RFM Analysis – Segment](#4-rfm-analysis--customer-segmentation)
-  - [RFM Analysis – Country](#5-rfm-analysis--geographical-analysis)
-- [Interactive Features](#-interactive-features)
+- [Dataset and Analytical Dimensions](#-dataset-and-analytical-dimensions)
+- [RFM Analysis Explained](#-rfm-analysis-explained)
+- [Dashboard Experience](#-dashboard-experience)
+- [Dashboard Gallery](#-dashboard-gallery)
 - [Key Performance Indicators](#-key-performance-indicators)
-- [Key Business Observations](#-key-business-observations)
+- [Interactive Features](#-interactive-features)
+- [Insights from the Dashboard](#-insights-from-the-dashboard)
 - [Analytical Workflow](#-analytical-workflow)
 - [Technology Stack](#-technology-stack)
 - [Repository Structure](#-repository-structure)
 - [Getting Started](#-getting-started)
-- [Business Recommendations](#-business-recommendations)
-- [Limitations & Considerations](#-limitations--considerations)
+- [Business Opportunities](#-business-opportunities)
+- [Limitations and Interpretation](#-limitations-and-interpretation)
 - [Future Enhancements](#-future-enhancements)
 - [Author](#-author)
 
@@ -48,722 +47,386 @@
 
 ---
 
-## 🎯 Project Overview
+## 🎯 Project at a Glance
 
-**What if customer data could reveal not just how much a business earns, but also why customers stay, when they return, and which segments contribute the most value?**
-
-This project, **IKEA Customer Analytics**, is an end-to-end business intelligence and customer analytics project designed to explore customer purchasing behaviour, revenue performance, retention patterns, and customer segmentation.
-
-Using Power BI, I developed an interactive dashboard experience that combines business performance monitoring with RFM (Recency, Frequency, Monetary) analysis.
-
-The project transforms transactional customer information into meaningful analytical insights through visual storytelling, KPI tracking, segmentation, and geographical comparisons.
-
-Rather than looking at revenue as an isolated business metric, the dashboard connects revenue performance with customer behaviour to provide a broader understanding of business performance.
-
-### What does this project investigate?
-
-- How many customers contribute to the overall business?
-- Which customer segments generate the highest revenue?
-- How does customer churn vary across different segments?
-- How does revenue change over time?
-- Which customer groups demonstrate stronger purchasing behaviour?
-- How does customer value differ across countries?
-- Which RFM segments require greater attention from a retention perspective?
-
-**Project Focus:** Customer Analytics | Revenue Intelligence | RFM Segmentation | Churn Analysis | Business Intelligence
-
----
-
-## 💼 Business Context & Problem Statement
-
-For a retail business such as IKEA, understanding customer relationships is just as important as understanding sales performance.
-
-A business may generate substantial revenue while simultaneously experiencing customer attrition. Similarly, not every customer contributes equally to revenue, purchasing frequency, or long-term business value.
-
-Looking at total revenue alone does not provide enough information to understand these patterns.
-
-The central business challenge addressed by this project is:
-
-**How can customer transaction data be transformed into an integrated analytical dashboard that helps understand revenue contribution, customer retention, purchasing behaviour, and customer value?**
-
-To address this challenge, the dashboard brings together five major analytical dimensions:
-
-| Analytical Dimension | Business Perspective |
+| Project element | Details |
 |---|---|
-| Customer Performance | Understand customer distribution and retention |
-| Revenue Performance | Evaluate revenue generation across segments |
-| Customer Segmentation | Identify customer groups using RFM analysis |
-| Churn Analysis | Examine customer attrition patterns |
-| Geographical Analysis | Compare customer value across countries |
+| Project | IKEA Customer Analytics |
+| Business domain | Retail customer and revenue analytics |
+| Main platform | Microsoft Power BI |
+| Analytical approach | Customer analysis, revenue analysis, RFM segmentation and churn analysis |
+| Main report sections | Business Overview and RFM Analysis |
+| Dashboard pages | 5-page report export |
+| Key dimensions | Month, Quarter, Year, Country, Segment and IsChurned |
+| Supporting documentation | Business Requirement Document (BRD) |
+| Main deliverable | Dashboard PDF and supporting project resources |
 
-The result is a unified analytical environment for exploring customer and revenue performance.
+## 🧭 Project Overview
 
----
+How can customer transaction data help a retail business understand not only how much revenue it generates, but also **who contributes that revenue, how customers behave, and where retention opportunities may exist?**
+
+The **IKEA Customer Analytics** project explores customer behaviour and business performance through a Power BI dashboard. It brings together customer distribution, revenue contribution, churn patterns, RFM-based segmentation and country-level comparisons in one report.
+
+The report is organised into two connected analytical areas:
+
+1. **Business Overview** — examines customer and revenue performance over time and across customer segments.
+2. **RFM Analysis** — compares customer segments and countries using Recency, Frequency and Monetary measures.
+
+The goal is to make the available data easier to explore and interpret through clear KPIs, comparative visuals, time-based analysis and interactive report controls.
+
+> **Project scope:** This is a descriptive business intelligence and customer analytics project. It explores patterns represented in the supplied dataset and dashboard; it is not, by itself, a predictive churn model or a causal analysis.
+
+## 💼 Business Problem
+
+Customer count and total revenue are important business measures, but neither tells the whole story on its own. Different customer groups can contribute differently to revenue, purchase activity and churn. Aggregate figures may hide these differences.
+
+This project addresses the following business question:
+
+**How can customer and transaction information be organised into an interactive dashboard that helps compare customer groups, monitor revenue performance and investigate retention patterns?**
+
+The dashboard approaches this question through five analytical perspectives:
+
+| Perspective | What it helps investigate |
+|---|---|
+| Customer performance | How customers are distributed across segments and periods |
+| Revenue performance | How revenue is distributed across segments and time |
+| Customer segmentation | How customer groups differ across RFM measures |
+| Churn and retention | How churn status varies across segments and periods |
+| Geographical analysis | How customer and revenue measures differ by country |
 
 ## 🎯 Project Objectives
 
-The primary objectives of this project are:
+- Present an at-a-glance view of key customer and revenue indicators.
+- Compare customer counts across the available customer segments.
+- Examine retained and churned customer patterns by segment.
+- Analyse revenue contribution across customer segments.
+- Explore monthly, quarterly and yearly customer and revenue trends.
+- Apply RFM concepts to compare customer behaviour and value.
+- Compare customer and revenue measures across countries.
+- Provide report-level filtering and navigation to support exploratory analysis.
+- Document the business requirements, dataset resource and report design in one repository.
 
-1. **Customer Performance Analysis:** Evaluate customer distribution across different segments.
-2. **Revenue Intelligence:** Examine revenue contribution across customer categories.
-3. **RFM Segmentation:** Understand customer purchasing behaviour through Recency, Frequency, and Monetary metrics.
-4. **Churn Analysis:** Investigate customer churn patterns across different time periods and segments.
-5. **Time-Series Analysis:** Explore monthly, quarterly, and yearly business performance.
-6. **Geographical Analysis:** Compare customer performance and value across countries.
-7. **Interactive Reporting:** Build dynamic dashboards using slicers, navigation buttons, and analytical selectors.
-8. **Business Storytelling:** Convert analytical findings into understandable visual insights that support business decision-making.
+## 📊 Dataset and Analytical Dimensions
 
----
+The repository includes the compressed source file **`IKEA Gifting Dataset.zip`**. The dashboard indicates that the analysis uses customer, revenue, time, country, segment and churn dimensions.
 
-## 📊 Dataset Overview
+The complete source schema, row count and data dictionary are not established by the dashboard export alone. They are therefore not stated as fixed facts here.
 
-The project uses the IKEA Gifting Dataset, supplied in the repository as a compressed ZIP file.
+### Dimensions visible in the report
 
-The dashboard explores customer and transactional information through customer-level and revenue-level aggregations.
-
-| Dataset Component | Description |
+| Dimension | Role in the dashboard |
 |---|---|
-| Dataset | IKEA Gifting Dataset |
-| File Provided | `IKEA Gifting Dataset.zip` |
-| Analytical Focus | Customer and revenue performance |
-| Customer Segmentation | RFM |
-| Time Dimensions | Month, Quarter, Year |
-| Geographical Dimension | Country |
-| Business Dimensions | Customer Segment, Churn Status |
-| Visualization Platform | Power BI |
+| Month | Monthly customer, revenue and churn comparisons |
+| Quarter | Quarterly performance comparisons |
+| Year | Year-level trend analysis |
+| Country | Geographical comparison and country performance summary |
+| Segment | Customer segment comparisons and RFM analysis |
+| IsChurned | Filtering and comparing churn status |
 
-**Important:** The original dataset's exact row count, column count, and complete schema are not specified in the dashboard PDF. These have therefore not been assumed.
+### Customer segments shown
 
-### Analytical Dimensions
+The report displays the following segment labels:
 
-The dashboard uses the following dimensions for interactive analysis:
+- Champions
+- Loyal
+- At Risk
+- New
+- Needs Attention
+- Lost
 
-| Dimension | Analytical Purpose |
-|---|---|
-| Month | Monthly customer and revenue trends |
-| Quarter | Quarterly performance comparison |
-| Year | Year-over-year analysis |
-| Country | Geographical performance |
-| Segment | Customer segment comparison |
-| IsChurned | Customer retention and churn analysis |
+The labels are reproduced from the dashboard. Their exact scoring thresholds and assignment rules should be confirmed from the underlying data model or business requirements document before being used operationally.
 
----
+## 🔍 RFM Analysis Explained
 
-## 🔍 Understanding RFM Analysis
+RFM is a customer analysis framework that evaluates customers through three dimensions:
 
-One of the central analytical components of this project is **RFM Analysis**.
-
-RFM is a customer segmentation technique that evaluates customer behaviour using three important dimensions.
-
-<details>
-<summary><b>1. Recency (R) – When did the customer last purchase?</b></summary>
-
-Recency measures how recently a customer made a purchase.
-
-It helps understand customer engagement and purchasing activity.
-
-A more recent purchase can indicate stronger recent engagement, while a longer gap may indicate a need for further investigation.
-
-**Business Application:** Identifying customers who may require re-engagement campaigns.
-
-</details>
-
-<details>
-<summary><b>2. Frequency (F) – How often does the customer purchase?</b></summary>
-
-Frequency measures the number of purchases made by a customer during the observed period.
-
-It helps distinguish occasional buyers from customers who purchase repeatedly.
-
-**Business Application:** Understanding repeat purchasing behaviour and customer loyalty.
-
-</details>
-
-<details>
-<summary><b>3. Monetary (M) – How much value does the customer generate?</b></summary>
-
-Monetary measures the financial contribution associated with a customer's purchases.
-
-It provides insight into customer revenue contribution.
-
-**Business Application:** Identifying customers with higher monetary contribution and evaluating customer value.
-
-</details>
-
-### Why combine R, F, and M?
-
-Looking at these dimensions independently provides only part of the picture.
-
-Combining them creates a more comprehensive customer profile.
-
-| RFM Dimension | Key Question | Business Value |
+| Dimension | Meaning | Business question |
 |---|---|---|
-| Recency | How recently? | Customer engagement |
-| Frequency | How often? | Purchase consistency |
-| Monetary | How much? | Revenue contribution |
+| **Recency (R)** | How recently a customer made a purchase | When did the customer last purchase? |
+| **Frequency (F)** | How often a customer purchased during the observation period | How often does the customer purchase? |
+| **Monetary (M)** | The monetary value associated with a customer's purchases | How much value does the customer contribute? |
 
-The dashboard uses RFM scores to compare customer segments and understand their average Recency, Frequency, and Monetary characteristics.
+### Why RFM matters
 
-*Note: The exact scoring thresholds and segment assignment rules should be interpreted from the underlying project model rather than assumed from the exported dashboard.*
+Considering Recency, Frequency and Monetary measures together can provide a richer view of customer behaviour than considering a single measure in isolation. It can help distinguish customer groups for further investigation, such as highly engaged customers, recently acquired customers and groups that may need retention attention.
 
----
+The dashboard's RFM pages compare segment-level and country-level summaries, including average R, average F and average M scores, total customers and total revenue.
 
-## 🖥️ Dashboard Architecture
+**Interpretation note:** RFM scores and segment labels depend on the scoring method and thresholds used in the underlying model. The dashboard export does not document those thresholds in sufficient detail to reproduce them here.
 
-The project is structured around two major analytical modules.
+## 🖥️ Dashboard Experience
 
-<p align="center">
-  <b>IKEA CUSTOMER ANALYTICS</b>
-  <br/>
-  Customer Understanding & Revenue Intelligence
-</p>
+The report is organised as a five-page experience:
 
-```text
-                  IKEA CUSTOMER ANALYTICS
-                            |
-              +-------------+-------------+
-              |                           |
-       BUSINESS OVERVIEW              RFM ANALYSIS
-              |                           |
-       +------+-------+             +-----+------+
-       |              |             |            |
-   Customer        Revenue        Segment      Country
-   Analysis        Analysis       Analysis     Analysis
-       |              |             |            |
-       +--------------+-------------+------------+
-                            |
-                    BUSINESS INSIGHTS
-                            |
-              Customer Value & Retention
-                  Revenue Performance
-```
+| Page | Dashboard section | Main purpose |
+|---|---|---|
+| 1 | IKEA Customer Analytics | Landing page, module navigation and key-metric glossary |
+| 2 | Business Overview — Customer | Customer distribution, retention and time trends |
+| 3 | RFM Analysis — Segment | Segment performance, average customer value and churn trends |
+| 4 | Business Overview — Revenue | Revenue contribution by segment and time trends |
+| 5 | RFM Analysis — Country | Country performance and top-country customer value |
 
-### Dashboard Design Philosophy
+### 1. Landing Page — IKEA Customer Analytics
 
-The dashboard follows a consistent visual identity inspired by IKEA's recognizable blue-and-yellow branding.
+The opening page introduces the two main report areas: **Business Overview** and **RFM Analysis**. It also includes a key-metrics glossary for Churned %, Recency, Frequency, Monetary and Customer Value.
 
-- Blue represents the primary visual identity.
-- Yellow highlights important analytical elements.
-- White backgrounds maintain visual clarity.
-- KPI cards provide quick access to business performance.
-- Consistent filters support cross-page analysis.
-- Navigation buttons connect the major analytical modules.
+### 2. Business Overview — Customer Analysis
 
-The report is designed to make complex information accessible without overwhelming the user.
+This page focuses on customer volume and retention. The visuals include:
 
----
+- Total customers by segment.
+- Customer retention by segment, split by churn status.
+- Total customers by month.
+- Total customers by quarter.
+- Total customers by year.
 
-## 📈 Dashboard Walkthrough
+These views allow the user to compare customer distribution and investigate how customer counts and churn patterns vary across segments and time periods.
 
-### 1. IKEA Customer Analytics – Overview
+### 3. RFM Analysis — Segment Analysis
 
-The landing page introduces the analytical framework and provides navigation to the two main modules.
+This page presents a segment performance summary with total customers, total revenue and average R, F and M scores. It also includes average customer value by segment and churn trends by month, quarter and year.
 
-**Business Overview**
+The segment summary supports comparisons between customer groups rather than relying on total customer count alone.
 
-Focuses on customer distribution, revenue generation, retention, and business performance.
+### 4. Business Overview — Revenue Analysis
 
-**RFM Analysis**
+This page focuses on revenue contribution and revenue trends. The visuals include:
 
-Focuses on customer purchasing behaviour, segmentation, and customer value.
+- Total revenue by segment.
+- Revenue contribution by segment.
+- Total revenue by month.
+- Total revenue by quarter.
+- Total revenue by year.
 
-The landing page also includes a Key Metrics Glossary explaining:
+The page makes it possible to compare customer volume with revenue contribution and investigate how revenue changes over time.
 
-- Churned %
-- Recency (R)
-- Frequency (F)
-- Monetary (M)
-- Customer Value
+### 5. RFM Analysis — Country Analysis
 
-<details>
-<summary><b>Explore the landing page</b></summary>
+This page presents a country performance summary with total customers, total revenue and average R, F and M scores. It also includes a top-five country comparison by average customer value and churn trends over time.
 
-The introductory page acts as the navigation hub for the complete analytical report, helping users understand the purpose of each module before exploring the dashboards.
+This view supports geographical comparisons while keeping customer value and revenue in the same analytical context.
 
-</details>
+## 🖼️ Dashboard Gallery
 
-### 2. Business Overview – Customer Analysis
+The following images are taken from the supplied five-page dashboard preview. They are included as separate repository assets so visitors can inspect the report directly on GitHub.
 
-This module focuses on customer distribution and retention performance.
+### Page 1 — Project Overview
 
-**Key Visualizations**
+![IKEA Customer Analytics landing page](assets/01-dashboard-overview.png)
 
-| Visualization | Analytical Purpose |
-|---|---|
-| Total Customers by Segment | Compares customer distribution across segments |
-| Customer Retention by Segment | Compares churned and retained customers |
-| Total Customers by Month | Explores monthly customer trends |
-| Total Customers by Quarter | Examines quarterly customer patterns |
-| Total Customers by Year | Evaluates customer trends across years |
+### Page 2 — Business Overview: Customer
 
-**Key Questions Answered**
+![Business Overview customer analysis](assets/02-business-customer.png)
 
-- Which customer segment contains the largest number of customers?
-- How does customer retention differ across segments?
-- Which months show higher customer counts?
-- How does customer performance change across quarters and years?
+### Page 3 — RFM Analysis: Segment
 
-The customer module makes it possible to evaluate customer distribution alongside retention behaviour.
+![RFM segment analysis](assets/03-rfm-segment.png)
 
-### 3. Business Overview – Revenue Analysis
+### Page 4 — Business Overview: Revenue
 
-This module shifts the focus from customer volume to revenue generation.
+![Business Overview revenue analysis](assets/04-business-revenue.png)
 
-It allows users to explore how revenue is distributed across segments and how it changes over time.
+### Page 5 — RFM Analysis: Country
 
-**Key Visualizations**
+![RFM country analysis](assets/05-rfm-country.png)
 
-| Visualization | Analytical Purpose |
-|---|---|
-| Total Revenue by Segment | Compares revenue contribution across customer segments |
-| Revenue Retention by Segment | Examines revenue distribution across customer segments |
-| Total Revenue by Month | Tracks monthly revenue performance |
-| Total Revenue by Quarter | Compares quarterly revenue |
-| Total Revenue by Year | Examines annual revenue trends |
+### View the complete dashboard PDF
 
-The dashboard also includes a toggle between Customer and Revenue views, allowing users to explore different business perspectives.
+The complete five-page export is available here:
 
-**Analytical Perspective**
+📄 **[Open IKEA Dashboard as PDF](IKEA%20Dashboard%20as%20pdf.pdf)**
 
-Customer volume and revenue contribution are not necessarily proportional.
+> GitHub README files display image files directly, but do not render a PDF as an inline interactive report. The PDF link above lets readers open the complete exported report. The page images provide an immediate visual preview within the README.
 
-A segment with a large customer base may not generate the highest revenue. Comparing both dimensions helps reveal differences in customer contribution.
+## 📌 Key Performance Indicators
 
-### 4. RFM Analysis – Customer Segmentation
+The Business Overview page displays the following headline metrics in the exported dashboard view:
 
-This module explores customer behaviour through RFM segmentation.
+| KPI | Value shown | What it represents |
+|---|---:|---|
+| Total Customers | 5,881 | Customer count in the displayed report view |
+| Total Revenue | $17.4M | Revenue in the displayed report view |
+| Churned % | 50.86% | Churn percentage shown in the report |
+| Average Customer Value | 2,954 | Average customer value shown in the report |
 
-The Segment Performance Summary provides a structured comparison of customer segments.
-
-**Metrics Included**
-
-- Total Customers
-- Total Revenue
-- Average Recency Score
-- Average Frequency Score
-- Average Monetary Score
-
-The dashboard includes the following customer segments:
-
-| Segment | Analytical Interpretation |
-|---|---|
-| Champions | A customer group identified as a distinct high-performing segment |
-| Loyal | A segment associated with customer loyalty |
-| At Risk | A segment requiring closer retention attention |
-| New | Recently acquired or newly classified customers |
-| Needs Attention | Customers requiring further engagement analysis |
-| Lost | A segment associated with inactive or lost customers |
-
-These are the segment labels displayed in the dashboard. Their exact classification thresholds depend on the underlying RFM logic.
-
-**Additional Visualization: Segment by Average Customer Value**
-
-A bar chart compares average customer value across the different segments.
-
-This helps identify differences in the value generated by individual customer groups.
-
-**Business Questions**
-
-- Which segment contributes the most revenue?
-- How does average customer value vary across segments?
-- Which segments may require retention strategies?
-- How do RFM scores differ between customer groups?
-
-### 5. RFM Analysis – Geographical Analysis
-
-The country-level analysis explores customer performance across geographical markets.
-
-The dashboard includes a Country Performance Summary containing:
-
-- Country
-- Total Customers
-- Total Revenue
-- Average Recency Score
-- Average Frequency Score
-- Average Monetary Score
-
-**Top 5 Countries by Average Customer Value**
-
-A dedicated bar chart highlights the top five countries according to average customer value.
-
-This allows users to compare geographical differences in customer value.
-
-**Business Applications**
-
-- Identifying geographical markets with higher average customer value.
-- Comparing customer behaviour across countries.
-- Understanding differences in revenue contribution.
-- Exploring opportunities for market-specific customer engagement.
-
----
+These are the values visible in the supplied dashboard export. They may change under report filters. The precise unit and calculation definition for Average Customer Value should be checked against the underlying model or BRD before being interpreted beyond the displayed label and value.
 
 ## 🎛️ Interactive Features
 
-The dashboard is designed around interactive exploration rather than static reporting.
+The dashboard export shows the following report controls and navigation elements:
 
-### Global Filters (Slicers)
+### Global slicers
 
-The report includes six primary slicers:
-
-| Filter | Function |
+| Slicer | Intended use |
 |---|---|
-| Month | Filters data by month |
-| Quarter | Filters data by quarter |
-| Year | Filters data by year |
-| Country | Filters data by geographical market |
-| Segment | Filters data by customer segment |
-| IsChurned | Filters customers by churn status |
+| Month | Filter the report by month |
+| Quarter | Filter the report by quarter |
+| Year | Filter the report by year |
+| Country | Focus the analysis on a country |
+| Segment | Focus the analysis on a customer segment |
+| IsChurned | Filter by churn status |
 
-These filters allow users to investigate specific customer groups and business periods.
+### View switching and navigation
 
-### Dynamic Dashboard Navigation
+- **Business Overview / RFM Analysis:** Navigate between the two main report areas.
+- **Customer / Revenue:** Switch the Business Overview analysis between customer and revenue perspectives.
+- **Segment / Country:** Switch the RFM analysis between segment-level and country-level perspectives.
+- **Clear All Slicers:** Reset filter selections and return to an unfiltered report view.
 
-The report includes navigation between:
+The PDF is a static export and does not retain live Power BI interactions. To use the slicers and navigation controls, the original Power BI report file is required. A `.pbix` file was not among the repository files shown for this project.
 
-- Business Overview
-- RFM Analysis
+## 💡 Insights from the Dashboard
 
-### Customer / Revenue Toggle
+The following are descriptive observations from the supplied dashboard export, not causal conclusions or predictions.
 
-Within Business Overview, users can switch between customer-focused and revenue-focused visualizations.
+1. **Customer distribution differs by segment.** The customer page shows variation in customer counts across Champions, Loyal, At Risk, New, Needs Attention and Lost.
+2. **Retention patterns differ across segments.** The customer retention chart compares churn status across the displayed customer groups, making segment-level retention investigation possible.
+3. **Revenue contribution is not uniform.** The revenue page shows Champions as the largest revenue-contributing segment in the displayed view.
+4. **Revenue varies over time.** Monthly, quarterly and yearly visuals provide complementary views of revenue performance. In the exported yearly chart, 2010 is the highest of the three displayed years.
+5. **Customer value varies by country.** The country page compares average customer value across countries and highlights the top five in the displayed view.
+6. **RFM measures add customer context.** The segment and country summaries place customer count and revenue alongside average Recency, Frequency and Monetary scores.
 
-### Segment / Country Toggle
-
-Within RFM Analysis, users can switch between segment-level and country-level analytical views.
-
-### Clear All Slicers
-
-A dedicated reset control allows users to clear their selections and return to the overall dashboard view.
-
-**Why this matters:** These interactive controls make the dashboard useful for exploratory analysis, allowing users to investigate different business questions without navigating multiple disconnected reports.
-
----
-
-## 🧮 Key Performance Indicators
-
-The dashboard highlights four primary KPIs in its Business Overview.
-
-| KPI | Dashboard Value | Interpretation |
-|---|---:|---|
-| Total Customers | 5,881 | Total customers in the displayed view |
-| Total Revenue | $17.4M | Overall revenue displayed |
-| Churned % | 50.86% | Displayed churn percentage |
-| Average Customer Value | 2,954 | Average customer value displayed |
-
-<details>
-<summary><b>Understanding the KPIs</b></summary>
-
-**Total Customers**
-
-Provides an overview of the customer population represented in the selected dashboard context.
-
-**Total Revenue**
-
-Represents the revenue generated by the customers and transactions included in the current view.
-
-**Churned Percentage**
-
-Provides an overview of customer churn and helps evaluate retention performance.
-
-**Average Customer Value**
-
-Provides an average-value perspective, helping compare customer contribution beyond customer volume alone.
-
-</details>
-
-*The values above are taken from the exported dashboard's displayed overview and may change when filters are applied.*
-
----
-
-## 💡 Key Business Observations
-
-The following observations are based on the five-page dashboard export.
-
-### 1. Customer Distribution Across Segments
-
-The customer distribution chart highlights differences in the number of customers across the six RFM segments.
-
-The Lost segment has the largest displayed customer count, while Needs Attention has the smallest.
-
-This makes segment-level retention analysis particularly relevant.
-
-### 2. Customer Retention Requires Segment-Level Investigation
-
-The retention visualization compares churned and retained customers across the different segments.
-
-It helps identify where churn is concentrated rather than relying exclusively on the overall churn percentage.
-
-### 3. Revenue Contribution Varies Across Segments
-
-The revenue dashboard shows Champions as the largest revenue-contributing segment in the displayed view.
-
-This demonstrates the importance of comparing revenue contribution alongside customer volume.
-
-### 4. Revenue Performance Changes Over Time
-
-Monthly, quarterly, and yearly revenue visuals provide three different perspectives on business performance.
-
-The quarterly chart shows an increase across the displayed quarters, with the highest value in Q4.
-
-The yearly visualization shows higher revenue in 2010 than in 2009, followed by a lower displayed value in 2011.
-
-### 5. RFM Segmentation Provides Deeper Customer Context
-
-The segment performance summary compares customer volume and revenue alongside average RFM scores.
-
-This makes it possible to investigate why different customer groups may contribute differently to business performance.
-
-### 6. Geographical Customer Value Differs
-
-The country-level dashboard shows differences in customer count, revenue, and average RFM scores across markets.
-
-The top-five customer-value chart provides another perspective on geographical customer contribution.
-
-**Important:** These findings describe the exported dashboard view. They are descriptive observations, not proof of causation or forecasts of future business performance.
-
----
+Always interpret rates alongside their underlying customer counts. A percentage calculated from a small segment can be less stable than a percentage based on a larger group.
 
 ## 🔄 Analytical Workflow
 
-The project follows a structured business intelligence workflow.
-
 ```mermaid
 flowchart TD
-    A["IKEA Gifting Dataset"] --> B["Dataset Exploration"]
-    B --> C["Business Requirement Analysis"]
-    C --> D["Customer & Revenue Analysis"]
-    D --> E["RFM Segmentation"]
-    E --> F["KPI Development"]
-    F --> G["Power BI Data Modelling"]
-    G --> H["Dashboard Development"]
-    H --> I["Interactive Filters & Navigation"]
-    I --> J["Business Performance Analysis"]
-    J --> K["Customer & Revenue Insights"]
+    A[IKEA Gifting Dataset] --> B[Review available data and requirements]
+    B --> C[Identify customer, revenue and time dimensions]
+    C --> D[Explore customer and revenue performance]
+    D --> E[Compare RFM segments and countries]
+    E --> F[Build KPI and dashboard views]
+    F --> G[Add slicers and report navigation]
+    G --> H[Review dashboard patterns]
+    H --> I[Document business observations]
 ```
 
-### Workflow Explanation
+The repository includes the dataset archive, Business Requirement Document, Power BI theme file and PDF dashboard export. The exact transformation steps and DAX definitions are not included in the visible file list, so this workflow describes the analytical structure rather than claiming a specific undocumented implementation.
 
-1. **Dataset Exploration:** Understand the available customer and transactional information.
-2. **Business Requirement Analysis:** Identify the key business questions and analytical dimensions.
-3. **Customer & Revenue Analysis:** Explore customer distribution and revenue performance.
-4. **RFM Segmentation:** Examine customer behaviour using Recency, Frequency, and Monetary dimensions.
-5. **KPI Development:** Present important business indicators through dashboard cards.
-6. **Data Modelling:** Organize the data for analytical reporting in Power BI.
-7. **Dashboard Development:** Create customer, revenue, and RFM visualizations.
-8. **Interactivity:** Integrate slicers, navigation controls, and analytical selectors.
-9. **Business Analysis:** Compare customer groups, geographical markets, and time periods.
-10. **Insight Generation:** Translate visual patterns into actionable business questions.
+## 🧰 Technology Stack
 
----
-
-## 🛠️ Technology Stack
-
-| Technology | Application |
+| Tool / Resource | Role in the project |
 |---|---|
-| Microsoft Power BI | Dashboard development and visualization |
-| DAX | Analytical calculations and measures, where implemented |
-| Power Query | Data preparation and transformation, where implemented |
-| JSON | Custom Power BI theme configuration |
-| Git & GitHub | Version control and project documentation |
-| Microsoft Word | Business Requirement Documentation |
-
-### Power BI Capabilities Demonstrated
-
-- KPI Cards
-- Bar and Column Charts
-- Line Charts
-- Pie Charts
-- Data Tables and Matrix Visuals
-- Conditional Formatting
-- Slicers
-- Dynamic Navigation
-- Interactive View Switching
-- Time-Based Analysis
-- Customer Segmentation
-
----
+| Microsoft Power BI | Dashboard design, data exploration and visual reporting |
+| DAX | Power BI measure and calculation language, where used in the report model |
+| Power Query | Power BI data preparation environment, if used in the underlying report |
+| JSON | Format of the supplied Power BI theme file |
+| Microsoft Word | Business requirement documentation (`IKEA BRD.docx`) |
+| GitHub | Project hosting, version control and documentation |
 
 ## 📁 Repository Structure
 
-The GitHub repository contains the following project files:
+The following structure reflects the files shown in the project repository, with an `assets/` folder added for the dashboard page images used in this README:
 
 ```text
 IKEA-Customer-Analytics/
 │
+├── assets/
+│   ├── 01-dashboard-overview.png
+│   ├── 02-business-customer.png
+│   ├── 03-rfm-segment.png
+│   ├── 04-business-revenue.png
+│   └── 05-rfm-country.png
+│
 ├── Background Images.zip
-│
 ├── IKEA BRD.docx
-│
 ├── IKEA Dashboard as pdf.pdf
-│
 ├── IKEA Gifting Dataset.zip
-│
 ├── IKEA Project Theme.json
-│
 ├── LICENSE
-│
 └── README.md
 ```
 
-### File Documentation
-
-| File | Description |
-|---|---|
-| `Background Images.zip` | Background images and visual resources associated with the dashboard |
-| `IKEA BRD.docx` | Business Requirement Document describing the project requirements |
-| `IKEA Dashboard as pdf.pdf` | Five-page exported dashboard showcasing the analytical report |
-| `IKEA Gifting Dataset.zip` | Compressed source dataset used for the project |
-| `IKEA Project Theme.json` | Custom Power BI theme configuration |
-| `LICENSE` | Repository licensing information |
-| `README.md` | Project documentation and overview |
-
-### Access Project Resources
-
-- [Business Requirement Document](IKEA%20BRD.docx)
-- [Dashboard PDF](IKEA%20Dashboard%20as%20pdf.pdf)
-- [Dataset ZIP](IKEA%20Gifting%20Dataset.zip)
-- [Power BI Theme JSON](IKEA%20Project%20Theme.json)
-- [Background Images](Background%20Images.zip)
-
----
+Keep the original filenames unchanged if you use the relative links in this README. GitHub paths are case-sensitive, so the names and folder locations must match exactly.
 
 ## 🚀 Getting Started
 
-Follow these steps to explore the project.
+### 1. Clone or download the repository
 
-### Step 1: Clone the Repository
-
-```bash
-git clone https://github.com/Vanshika26Ramjas/REPOSITORY-NAME.git
-```
-
-Navigate to the project directory:
+Open the repository on GitHub and use **Code → Download ZIP**, or clone it using the repository URL:
 
 ```bash
-cd IKEA-Analytics-Project
+git clone <YOUR-GITHUB-REPOSITORY-URL>
+cd <YOUR-REPOSITORY-FOLDER>
 ```
 
-### Step 2: Download the Dataset
+Replace the placeholders with the actual repository URL and folder name.
 
-Extract:
+### 2. Review the project documentation
 
-```text
-IKEA Gifting Dataset.zip
-```
+Open `IKEA BRD.docx` to review the business requirements and `README.md` for the project overview.
 
-Use the extracted dataset as the source for your Power BI analysis.
+### 3. Extract the dataset
 
-### Step 3: Review the Business Requirements
+Extract `IKEA Gifting Dataset.zip` to access the supplied dataset files. The exact source filename and schema should be confirmed after extraction.
 
-Open:
+### 4. Review the Power BI theme
 
-```text
-IKEA BRD.docx
-```
+The repository includes `IKEA Project Theme.json`. In Power BI Desktop, use the report theme import option to apply the supplied JSON theme, if required.
 
-Review the business requirements and analytical objectives.
+### 5. View the dashboard
 
-### Step 4: Explore the Power BI Theme
+Open `IKEA Dashboard as pdf.pdf` to review the five-page report export. The separate images in `assets/` are included for quick viewing on GitHub.
 
-Open:
+**To interact with the report:** use the original Power BI `.pbix` file if it is available to you. The PDF export is for viewing and does not contain working slicers or navigation interactions.
 
-```text
-IKEA Project Theme.json
-```
+## 💼 Business Opportunities
 
-In Power BI Desktop, import the JSON theme through the report theme options.
+The dashboard can support further investigation into opportunities such as:
 
-### Step 5: Explore the Dashboard
-
-Open:
-
-```text
-IKEA Dashboard as pdf.pdf
-```
-
-The PDF contains five dashboard pages illustrating the project structure, visualizations, KPIs, and analytical findings.
-
-**Note:** The PDF is a static export. The original interactive Power BI report file (`.pbix`) is not included in the repository files listed above.
-
----
-
-## 📌 Business Recommendations
-
-Based on the analytical dimensions available in the dashboard, the following are potential areas for business investigation.
-
-| Analytical Finding | Potential Business Action |
+| Area | Follow-up question |
 |---|---|
-| Differences in customer retention across segments | Investigate segment-specific retention strategies |
-| High revenue contribution from Champions | Explore customer loyalty and engagement initiatives |
-| Customers classified as At Risk | Evaluate targeted re-engagement campaigns |
-| Customers classified as Lost | Investigate inactivity and customer reactivation opportunities |
-| Differences in average customer value across countries | Explore market-specific customer strategies |
-| Changes in monthly and quarterly revenue | Monitor seasonal and time-based business patterns |
+| Customer retention | Which segments show the greatest churn share, and how many customers are represented? |
+| High-value customers | What behaviours distinguish the segments with higher average customer value? |
+| Revenue concentration | How dependent is total revenue on the largest contributing segment? |
+| Customer engagement | How do Recency and Frequency differ across customer segments? |
+| Geographical performance | Which countries combine customer scale with higher average customer value? |
+| Time trends | Are changes in revenue and churn consistent across months, quarters and years? |
 
-These are suggested business actions, not evidence that a particular intervention will necessarily improve performance.
+These are analytical opportunities suggested by the available dashboard views. They should be investigated with the underlying data before making operational decisions.
 
----
+## ⚠️ Limitations and Interpretation
 
-## ⚠️ Limitations & Considerations
-
-A few considerations are important when interpreting the dashboard:
-
-1. The analysis is descriptive and based on the available dataset.
-2. The dashboard's displayed KPIs are dependent on the selected filter context.
-3. RFM segment classifications depend on the underlying scoring methodology.
-4. Churn patterns should be interpreted in the context of the available churn definition and observation period.
-5. Revenue comparisons across segments should consider customer counts alongside revenue contribution.
-6. Geographical comparisons may be influenced by differences in customer volume.
-7. The exported PDF does not preserve live slicer interactions.
-8. The dashboard does not establish causal relationships between customer characteristics and churn.
-
----
+- The dashboard is descriptive; it does not establish that a customer characteristic causes churn or revenue differences.
+- KPI values shown in the README are from the exported default view and may change when filters are applied.
+- The precise dataset row count, column count and full field definitions are not specified here because they are not confirmed by the dashboard export.
+- RFM segment thresholds and scoring rules should be verified from the underlying model or BRD.
+- Churn interpretation depends on how `IsChurned` is defined and on the observation window.
+- Revenue and churn rates should be read alongside customer counts and the period being analysed.
+- Country comparisons may be affected by differences in customer volume and data coverage.
+- The PDF and page images are static. Live interaction requires the original Power BI report.
 
 ## 🔮 Future Enhancements
 
-The project provides a foundation for further customer intelligence and business analytics.
+Potential extensions to the project include:
 
-Potential enhancements include:
+- Adding a documented data dictionary and dataset profile.
+- Publishing the `.pbix` file, if sharing is permitted.
+- Documenting DAX measures and RFM scoring thresholds.
+- Adding customer cohort and repeat-purchase analysis.
+- Exploring customer lifetime value with a clearly defined calculation.
+- Developing a separately validated churn prediction model.
+- Adding drill-through pages for detailed segment and country investigation.
+- Including customer counts in tooltips alongside percentages and rates.
+- Documenting data refresh steps and the reporting period.
 
-- **Customer Lifetime Value (CLV):** Develop a deeper understanding of long-term customer contribution.
-- **Churn Prediction:** Explore predictive modelling to identify customers who may be at risk of leaving.
-- **Customer Cohort Analysis:** Track customer behaviour across acquisition periods.
-- **Revenue Forecasting:** Introduce forecasting techniques for future revenue analysis.
-- **Advanced RFM Segmentation:** Explore more granular customer scoring and segment strategies.
-- **Retention Analytics:** Investigate customer reactivation and repeat-purchase patterns.
-- **Drill-Through Analysis:** Allow deeper investigation of individual segments and countries.
-- **Automated Data Refresh:** Improve the reporting workflow with scheduled data updates.
-- **Customer Behaviour Analysis:** Explore purchase intervals and changes in purchasing patterns.
+## 👩‍💻 Author
 
----
-
-## 👩‍💻 About the Author
-
-**Vanshika Kumar**
-
+**Vanshika Kumar**  
 Statistics (Hons.) | Ramjas College, University of Delhi
 
-An aspiring data analyst interested in transforming raw data into meaningful business insights through statistics, data analytics, visualization, and business intelligence.
+Interested in applying statistics, analytics and business intelligence to practical business questions through data exploration, analytical thinking and visual storytelling.
 
-**Areas of Interest**
-
-- Data Analytics
-- Business Intelligence
-- Statistical Analysis
-- Customer Analytics
-- Data Visualization
-- SQL & Database Management
-
-**GitHub:** [Vanshika26Ramjas](https://github.com/Vanshika26Ramjas)
-
-**LinkedIn:** [Vanshika Kumar](https://www.linkedin.com/)
+- **GitHub:** [Vanshika26Ramjas](https://github.com/Vanshika26Ramjas)
+- **LinkedIn:** Add your LinkedIn profile URL here.
 
 ---
 
 <p align="center">
-  <b>Data tells a story. Analytics helps us understand it. Intelligence helps us act on it.</b>
+  <b>From customer data to business understanding.</b><br/>
+  Explore. Analyse. Discover. Make better-informed decisions.
   <br/><br/>
-  ⭐ If you find this project interesting, consider starring the repository!
-  <br/><br/>
-  <b>Built with Power BI | Driven by Customer Analytics | Inspired by IKEA</b>
+  ⭐ If you find this project interesting, consider starring the repository.
 </p>
+
